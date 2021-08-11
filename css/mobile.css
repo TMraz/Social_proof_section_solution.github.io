@@ -1,0 +1,154 @@
+@import url(https://fonts.googleapis.com/css2?family=Spartan:wght@400;500;700&display=swap);
+
+/* * {outline: 1px solid rgba(255, 0, 0, 0.479);} */
+
+:root {
+    --color-font: hsla(300, 43%, 22%, 0.75);
+    --color-font-light: hsla(0, 0%, 95%);
+    --color-bg-main: hsl(0, 0%, 0%);
+    --color-bg-card: hsl(0, 0%, 100%);
+    --color-bg-section:hsl(300, 24%, 96%);
+    --color-span: hsl(333, 80%, 67%);
+}
+
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* clearfix */
+main:before,
+main:after { content: " "; display: table; }
+main:after { clear: both; }
+
+html,
+body {
+    font-size: 100%;
+    font-weight: 400;
+    color: var(--color-font);
+    font-family: 'Spartan', sans-serif;
+}
+
+body {
+    height: auto;
+    background-color: var(--color-bg-main);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main {
+    height: 890px;
+    width: 230px;
+
+    padding: 3rem 1rem;
+
+    background-color: var(--color-bg-card);
+    background-image: url(../img/bg-pattern-bottom-mobile.svg), url(../img/bg-pattern-top-mobile.svg);
+    background-repeat: no-repeat, no-repeat;
+    background-position: bottom -16rem right, top -6rem left;
+}
+
+h1 {
+    font-size: 1.0625rem;
+    font-weight: 700;
+}
+
+h2 {
+    font-size: .5rem;
+    font-weight: 400;
+}
+
+h3 {
+    font-size: .5rem;
+    font-weight: 700;
+    line-height: 1.5;
+    color: var(--color-font-light);
+}
+
+p {
+    font-size: .5rem;
+    font-weight: 700;
+}
+
+
+
+/* === header === */
+header {
+    text-align: center;
+}
+
+header h1 {
+    padding: 0 1.25rem;
+}
+
+/* === aside === */
+aside {
+    margin: 1.875rem 0;
+}
+
+section {
+    margin: .8125rem 0;
+    border-radius: .5rem;
+    background-color: var(--color-bg-section);
+}
+
+section p {
+    padding-bottom: .4rem;
+    text-align: center;
+}
+
+.stars {
+    padding: .4rem 0;
+    margin: 0 4rem;
+
+    box-sizing: inherit;
+}
+
+.stars img {
+    height: .625rem;
+    width: .625rem;
+
+    padding: 0;
+    margin: 0;
+}
+
+/* === article === */
+article {
+    margin: .3125rem 0;
+}
+
+article section {
+    width: 12.5rem;
+    height: 9.375rem;
+    padding: 1.25rem 1rem;
+
+    border-radius: .3rem;
+    background-color: var(--color-font);
+}
+
+.article-header img {
+    width: 1.5625rem;
+    height: 1.5625rem;
+    margin-right: 1rem;
+    border-radius: 50%;
+}
+
+.float-left {
+    float: left;
+}
+
+.article-header span {
+    color: var(--color-span);
+}
+
+article p {
+    text-align: left;
+    padding: 1rem 0;
+    line-height: 1.8;
+    color: var(--color-font-light);
+}

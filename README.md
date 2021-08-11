@@ -28,7 +28,7 @@ Users should be able to:
 
 ### Links
 
-- [Solution URL](https://github.com/TMraz/Challenges/blob/main/Profile%20card%20component/index.html)
+- [Solution URL](https://tmraz.github.io/Social_proof_section_solution.github.io/)
 
 ## My process
 
